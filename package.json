@@ -1,4 +1,4 @@
-{
+{"homepage": "http://erdldncr.github.io/react-tailwind-image-gallery",
   "name": "react-tailwind-image-gallery",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npm run watch:css && react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +42,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "gh-pages": "^3.2.0",
     "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.2"
